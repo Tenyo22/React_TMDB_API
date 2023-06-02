@@ -8,7 +8,6 @@ const Navbar = () => {
                     <div className="text-white navbar-brand align-text-top"><h2>Trailer Movies</h2></div>
                 </div>
             </nav>
-            {/* <h2 className='text-center mt-5 mb-2'>Trailer Movies</h2> */}
         </>
     )
 }

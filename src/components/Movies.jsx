@@ -1,8 +1,5 @@
-// import './App.css';
-
 import axios from 'axios';
 import YouTube from 'react-youtube';
-// import SearchMovie from './SearchMovie';
 import { useCallback, useEffect, useState } from 'react';
 import '../styles/movies.css';
 import Navbar from './Navbar'
@@ -13,6 +10,7 @@ const Movies = () => {
     // Clave para consumir API
     const API_URL = "https://api.themoviedb.org/3";
     const API_KEY = "ac4d09d6f3b45953d04be6f6b9050e0f";
+    
     // Configuracion para obtener la imagen
     const IMAGE_PATH = "https://image.tmdb.org/t/p/original"
     const URL_IMAGE = "https://image.tmdb.org/t/p/original"
@@ -66,7 +64,7 @@ const Movies = () => {
                 append_to_response: "videos",
             }
         });
-        // console.log(data);
+        console.log(data);
 
         // console.log(data.videos.results.length);
         if (data.videos && data.videos.results) {
