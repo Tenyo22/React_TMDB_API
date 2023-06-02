@@ -115,7 +115,7 @@ const Movies = () => {
                             {playing ? (
                                 <>
                                     <YouTube
-                                        videoId={trailer.key}
+                                        videoId={trailer?.key}
                                         className="reproductor container"
                                         containerClassName={"youtube-container amru"}
                                         opts={{
